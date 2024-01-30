@@ -9,7 +9,15 @@ Also include getter functions for each variable.
 */
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+@JsonPropertyOrder({
+        "employee_id",
+        "first_name",
+        "last_name",
+        "email",
+        "title"
+})
 public class Employee {
 
     private long employee_id;
