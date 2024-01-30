@@ -20,15 +20,11 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 })
 public class Employee {
 
-    private long employee_id;
-
-    private String first_name;
-
-    private String last_name;
-
-    private String email;
-
-    private String title;
+    private  final long employee_id;
+    private  final String first_name;
+    private  final String last_name;
+    private  final String email;
+    private  final String title;
 
     public Employee(long employeeId, String firstname, String lastname, String email, String title){
         this.employee_id=employeeId;

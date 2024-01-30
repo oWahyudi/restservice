@@ -1,10 +1,8 @@
 package com.example.restservice;
 
 import org.junit.jupiter.api.*;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
