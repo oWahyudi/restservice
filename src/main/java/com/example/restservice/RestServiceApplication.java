@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class RestServiceApplication {
 
     public static void main(String[] args) {
+        Employees employess =EmployeeManager.getEmployees();
         SpringApplication.run(RestServiceApplication.class, args);
     }
 
