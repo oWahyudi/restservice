@@ -26,10 +26,10 @@ public class Employee {
     private  final String email;
     private  final String title;
 
-    public Employee(long employeeId, String firstname, String lastname, String email, String title){
-        this.employee_id=employeeId;
-        this.first_name=firstname;
-        this.last_name=lastname;
+    public Employee(long employee_id, String first_name, String last_name, String email, String title){
+        this.employee_id=employee_id;
+        this.first_name=first_name;
+        this.last_name=last_name;
         this.email=email;
         this.title=title;
     }

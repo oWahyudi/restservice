@@ -1,10 +1,14 @@
 package com.example.restservice;
 
 import org.junit.jupiter.api.*;
+import org.springframework.boot.test.context.SpringBootTest;
 import java.util.ArrayList;
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
+
+
+@SpringBootTest
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class EmployeesTest {
     private Employees employees;
@@ -34,6 +38,7 @@ class EmployeesTest {
         Boolean ret=employees.addEmployee(new Employee(6,"Mariah","winston","mariah@test.com","staff"));
         assertEquals(5, employees.getEmployeelist().size());
         assertEquals(true, ret);
+
 
     }
 
