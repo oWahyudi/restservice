@@ -74,6 +74,19 @@ class EmployeesTest {
         assertEquals(new_employees.size(),employees.getEmployeelist().size());
     }
 
+    @Test
+    @Order(7)
+    void testAddNewEmployee(){
+        Employee employee=new Employee(11,"New Firstname","New Lastname","New email","New title" );
+        Boolean result=EmployeeManager.getEmployees().addEmployee(employee);
+        assertEquals(true, result);
+
+        Employee emp=EmployeeManager.getEmployees().getEmployee(11);
+        assertEquals("New Firstname", emp.getFirstname());
+
+
+    }
+
 
 
 
